@@ -6,11 +6,13 @@ import Products from "./common/Products";
 // Context
 import { ProductsContext } from "../context/ProductContextProvider";
 
+import styles from "../assets/css/Store.module.css";
+
 const Store = () => {
     const products = useContext(ProductsContext);
 
     return (
-        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
+        <div className={styles.container}>
             {products.map((product) => (
                 <Products key={product.id} productData={product} />
             ))}
