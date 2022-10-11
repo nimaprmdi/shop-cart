@@ -2,9 +2,7 @@ import React, { useContext } from "react";
 import { shortner, isInCart, quantityCount } from "../../utils/helper";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContextProvider";
-
 import trashIcon from "../../assets/images/trash.svg";
-
 import styles from "../../assets/css/Product.module.css";
 
 const Products = ({ productData }) => {
